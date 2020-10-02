@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<title>Movies</title>
+
+<h1>Films by {{ director }}</h1>
+
+<h2> Shown in {{ magazines.0.name }} </h2>
+<h3> Also shown in {{mag.name}} on {{mag.year}}</h3>
+<ul>
+{% for movie in movies %}
+  <li>{{ movie.year }} - {{ movie.title }}</li>
+{% endfor %}
+</ul>
