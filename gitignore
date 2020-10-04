@@ -163,5 +163,7 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# virtual env
+hyperskill-django/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
