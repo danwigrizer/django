@@ -1,6 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
-<!--  uses a method without parenthis to capitlize the blog post-->
+    <h1>Posts by {{ view.kwargs.username }} ( {{ page_obj.paginator.count }} ) </h1>
     <h2>{{ blog_name.upper }}</h2>
     {% for post in post %}
         <article class="media content-section">
