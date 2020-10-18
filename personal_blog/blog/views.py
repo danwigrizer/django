@@ -21,14 +21,14 @@ def home(request):
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html' # <app>/<model>_<viewtype>.html
-    context_object_name = 'post'
     ordering = ['-date_posted']
+    context_object_name = 'post'
     paginate_by = 5
 
 
 class UserPostListView(ListView):
     model = Post
-    template_name = 'blog/user_posts.html' # <app>/<model>_<viewtype>.html
+    template_name = 'blog/user_posts.html'
     context_object_name = 'post'
     paginate_by = 5
 
